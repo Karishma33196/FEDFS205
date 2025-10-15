@@ -1,0 +1,78 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding-top: 70px; /* to prevent content overlap under nav */
+  background: #fffaf5;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background-color: #ffb6c1;
+  padding: 20px;
+}
+
+/* Fixed Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: pink;
+  padding: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* Slideshow Section */
+.slideshow {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  position: absolute;
+  animation: slide 9s infinite;
+}
+
+/* Keyframe Animation */
+@keyframes slide {
+  0% { opacity: 1; }
+  33% { opacity: 0; }
+  66% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+  .slideshow {
+    max-width: 100%;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #ffb6c1;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
