@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container{
+    display:grid;
+    grid-row:10% 8%;
+    grid-column:30% 30% 40%;
+    height:100vh;
+}
+.top{
+    height:10vh;
+    grid-row:1/2;
+    grid-column:1/4;
+    background-color: aquamarine;
+}
+.ft{
+    height:8vh;
+    grid-row:2/3;
+    grid-column:3/4;
+    background-color: burlywood;
+}
+
+.lt{
+    height:80vh;
+    grid-row:3/4;
+    grid-column:1/2;
+    background-color:brown;
+}
+.center{
+    height:80vh;
+    grid-row:2/3;
+    grid-column:1/2;
+    background-color:chartreuse;
+}
+.rt{
+    height:80vh;
+    grid-row:3/4;
+    grid-column:2/3;
+    background-color:cadetblue;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="top">header</div>
+<div class="lt">leftbar</div>
+<div class="center">main</div>
+<div class="rt">rightbar</div>
+<div class="ft">footer</div>
+    </div>
+    
+</body>
+</html>

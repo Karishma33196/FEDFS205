@@ -1,0 +1,38 @@
+      *{
+            border-radius:10px;
+        }
+        p{
+            color:blueviolet;
+            text-align:center;
+        }
+      .navbar{
+        display:flex;
+        background-color: darksalmon;
+        justify-content: space-between;
+        padding:10px 10px;
+      }  
+      .navbar .logo{
+        flex:1;
+      }
+      .navbar .logo img{
+        height:40px;
+        margin:0;
+        padding:10px;
+      }
+      .navbar .title{
+        flex:2;
+        text-align:center;
+        font-weight:bold;
+        font-size: 20px;
+        color:chartreuse;
+      }
+
+      .navbar.links{
+        flex:1;
+      }
+      .navbar .links a{
+        color:white;
+        margin-left:20px;
+        font-size:10px;
+
+      }
