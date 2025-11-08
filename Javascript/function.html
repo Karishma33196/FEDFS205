@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript Function Type Demo</h2>
+    <button onclick="runDeclaration()">Function Declaration</button>
+    <button onclick="runExpression()">Function Expression</button>
+    <button onclick="runArrow()">Arrow Function</button>
+    <button onclick="runAnonymous()">Anonymous Function</button>
+    <button onclick="runIIFE()">IIFE</button>
+    <button onclick="runConctructor()">Conctructor Function</button>
+    <button onclick="runGnerator()">Generator Function</button>
+    <button onclick="runAsync()">Async Function</button>
+    <div id="output">Output will appear here......</div>
+    <script>
+        const outputDiv = document.getElementById("output");
+        function show(msg){
+            outputDiv.innerText +=msg + "\n";
+        }
+        function clearOutput(){
+        outputDiv.innerText = "";
+        }
+        function calculateTotal(price,tax){
+            return price + (price*tax);
+        }
+        function runDeclaration(){
+            clearOutput();
+            show("Total = " + calculateTotal(100,0.05));
+        }
+        const greetUser = function(name){
+            return `Welcome, ${name}!`;
+        };
+        function runExpression(){
+            clearOutput();
+            show(greetUser("Mehanaz"));
+        }
+        const tasks = ["Work","Sleep","Exercise","Study"];
+        const shortTasks = tasks.filter(task => task.length <= 5);//length of Exercise > 5
+        function runArrow(){
+            clearOutput();
+            show("Short Tasks: " + shortTasks.join(", "));
+        }
+        function runAnonymous(){
+            setTimeout(function(){
+            clearOutput();
+            show("Reminder: Take a break!");
+        },1000);
+    }
+    </script>
+    </body>
+</html>

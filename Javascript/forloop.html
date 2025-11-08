@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers=[10,20,30,40];
+        document.write(typeof numbers);
+         document.write("<h2>1.Standard for loop </h2>");
+         for(let i=0;i<numbers.length;i++){
+          document.write("Index" + i + " = " + numbers[i] + "<br>");
+         }
+          document.write("<br>");
+           document.write("<h2>for in loop</h2>");//iterates over indexes/keys
+           for(let index in numbers){
+             document.write("Index " + index + " = " + numbers[index] + "<br>");//values along with their indices are presented
+           }
+            document.write("<br>");
+             document.write("<h2>3. for of loop </h2>");
+             for(let value of numbers){
+               document.write("Value = " + value + "<br>");//only values are presented
+             }
+              document.write("<br>");
+               document.write("<h2>4. forEach() Method</h2>");
+               numbers.forEach(function(value,index){
+                 document.write("Index" + index + " = " + value + "<br>");
+               });
+               let student ={ name: "John", age: 20, grade: "A"};
+                document.write("<h2>for in with object</h2>");
+                    for(let key in student){
+                         document.write(key + " : " + student[key] + "<br>");
+                    }
+
+                     document.write("<h2>6.for of loop</h2>");
+                     let word = "Hello";
+                     for(let char of word){
+                         document.write(char + "<br>");
+                     }
+    </script>
+</body>
+</html>
